@@ -1,10 +1,8 @@
 # AWS EC2 Security Group Terraform Module
 # Security Group for Public Bastion Host
-module "public_bastion_sg" {
+module "security-group" {
   source  = "terraform-aws-modules/security-group/aws"
-  #version = "3.18.0"
-  #version = "4.0.0"
-  version = "5.1.0"      
+  version = "5.1.2"    
   #name = "public-bastion-sg"  
   name = "${local.name}-public-bastion-sg"
   description = "Security Group with SSH port open for everybody (IPv4 CIDR), egress ports are all world open"

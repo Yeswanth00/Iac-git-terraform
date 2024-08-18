@@ -4,7 +4,8 @@ module "private_sg" {
   source  = "terraform-aws-modules/security-group/aws"
   #version = "3.18.0"
   #version = "4.0.0"
-  version = "5.1.0"      
+  version = "5.1.2" 
+      
   
   #name = "private-sg"
   name = "${local.name}-private-sg"  
